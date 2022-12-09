@@ -1,0 +1,56 @@
+CREAR UNA API REST CON MONGO DB  y node.js
+
+Pagina web del tutorial: 
+https://lo-victoria.com/series/nodejs-rest-api
+
+
+//Sirve para inicciar el servidor
+npm install express 
+
+        
+// Sirve para documentar el API con Swagger usando YAML
+npm install swagger-ui-express 
+npm install swagger-jsdoc
+
+//Sirve para subir archivos (iamgenes,documentos, etc...)
+npm install multer
+
+//Sirve para conectar nuestra API con una base de datos de MONGODB
+npm install --save mongoose
+
+//install the package dotenv npm so that we can use our .env file in our project:
+npm install dotenv
+
+npm install --save helmet
+
+npm install compression
+
+//COMANDOS DE HEROKU
+heroku login
+
+git init
+
+heroku git:remote -a "nombre de tu applicacion en heroku"
+
+    //ESTOS SON LOS COMANDOS PARA HACER COMMITS Y PUSH EN HEROKU
+        git add .
+        gt commit -am "commit"
+        git push heroku master
+
+    //ESTA ES MI CONEXION A LA BASE DE DATOS DE MONGODB
+        heroku config:set MONGODB_URI="mongodb+srv://myriam:myriam@cluster0.uukvxes.mongodb.net/?retryWrites=true&w=majority"
+
+        
+
+//Mocha y chai para testing del API
+npm install --save-dev mocha
+
+npm install --save-dev chai
+
+npm install --save-dev chai-http
+
+ //NOTA: para el testing con chai y mocha es necesario agregar esto en el package.json
+ "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+    },
+//--------------------------------------------------------------------------------------------------------

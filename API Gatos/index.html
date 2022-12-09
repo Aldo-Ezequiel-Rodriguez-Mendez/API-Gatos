@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gatos API</title>
+    <meta name="description" content="Una API cool de gatos">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preload" href="./public/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./public/style.css"></noscript>
+    
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./public/favicon.ico">
+  </head>
+  <body>
+    <div id='sampleui'>
+      <div class = "row">
+        <div class = "col-md-7 col-sm-12 title">
+          <h1>Bienvenido a la mejor API de gatos</h1>
+          <p>¿A quien no le gustan los michis?~</p>
+          <div class="dropdown">
+            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Rutas
+            </button>
+            <div id = "routes" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Mostrar todos los gatos</a>
+              <a class="dropdown-item" href="#">Mostrar un solo un gato</a>
+              <a class="dropdown-item" href="#">Actualizar comentarios a un gato</a>
+              <a class="dropdown-item" href="#">Crear un nuevo gato</a>
+              <a class="dropdown-item" href="#">Borrar un solo un gato</a>
+            </div>
+          </div>
+          
+            <div class="col-md-12 col-sm-12 none" id="display">
+            </div>
+               
+        </div>
+        <div id="gato-gif"class = "col-md-5 col-sm-12">
+          <br><br><br><br><br>
+            <img src=public/gato2.gif alt=”gif de michi> 
+        </div>
+      </div>
+       
+      
+      <!-- Footer -->
+      <footer class="page-footer">
+        
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-1">
+          <a  class="link-light" href="">Myriam Yazmin Patiño Segura 19100231</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    
+    <script defer src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script defer src="./public/client.js"></script>     
+</body>
+</html>
